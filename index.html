@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" type="text/css" rel="stylesheet">
+    <!--<link href="lib/materialize.css" type="text/css" rel="stylesheet"> TODO this one doesn't work -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <style>
+        .div-thumb { display: flex; flex-wrap: wrap;  padding-top: 5px; padding-left: 10px; }
+        .materialboxed { width: 200px; padding-top: 10px; padding-left: 20px; }
+        .logo { width: 100px; padding-top: 5px; padding-left: 10px; }
+        #nav-mobile li a, .navbar-fixed li a { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <!------------ top nav bar with links ------------>
+    <div class="navbar-fixed">
+        <nav class="light-blue lighten-3" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo">Alex Chen</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#top">Summary</a></li>
+                    <li><a href="#EXPERIENCE">Experience</a></li>
+                    <li><a href="#UI-SAMPLE">UI Samples</a></li>
+                    <li><a href="#PRODUCTS">Products</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav" style="left: 0;"><!--without this style, side-nav won't pop out-->
+                    <li><div class="userView">
+                        <div class="background">
+                            <img src="asset/background/warp.jpg" width="200">
+                        </div>
+                    </div>
+                    </li>
+                    <li><a href="#top">Summary</a></li>
+                    <li><a href="#EXPERIENCE">Experience</a></li>
+                    <li><a href="#UI-SAMPLE">UI Samples</a></li>
+                    <li><a href="#PRODUCTS">Products</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!------------ image strip with overlay text and button ------------>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center teal-text text-lighten-2">Software Developer</h1>
+                <div class="row center">
+                    <h4 class="header col s12 white-text light">20+ years experience in Java and Web development</h4>
+                </div>
+                <!-- TODO add twitter fb linked in, g+ ...etc -->
+                <!--<div class="row center">-->
+                    <!--<a href="http://materializecss.com/getting-started.html" id="download-button"-->
+                       <!--class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>-->
+                <!--</div>-->
+                <!--<br><br>-->
+            </div>
+        </div>
+        <div class="parallax"><img src="asset/background/bkgnd-1.png"
+           alt="Unsplashed background img 1"></div>
+    </div>
+
+    <!------------ 3 sections of descriptive text ------------>
+    <div class="container">
+        <div class="section">
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Diverse Industry Experience</h5>
+                        <p class="light">Worked for many companies from east coast to west coast as software
+                            engineer across different industries; biotech instrumentation, CATV instruments,
+                            video processing handling, Automobile website, CAE..etc.
+                            a</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Front end concentration</h5>
+                        <p class="light">Utilizing java for desktop rich GUI client as well as
+                            utilizing web languages/frameworks to develop browser based applications.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Giving back to society</h5>
+                        <p class="light">Volunteer teaching several classes in a non-profit organization(CLEC) about
+                            investments over 4 years. Volunteer in line dance association (CLDAA) over 2 years.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ image strip of product portfolio in thumbnails ------------>
+    <div class="parallax-container valign-wrapper" id="EXPERIENCE">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h3 class="header col s12 white-text light">
+                        Diverse industrial exposure <br/><br/> Concentrated front end UI skills</h3>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="asset/background/bkgnd-2.png"
+           alt="Unsplashed background img 2"></div>
+    </div>
+
+    <!------------ text box with logos/trademarks ------------>
+    <div class="row">
+        <div class="col s12 m6">
+            <h5 style="text-align: center;">Employers</h5>
+            <div class="div-thumb valign-wrapper">
+                <img class="materialboxed logo" src="asset/logo/logo-wvtk.png" data-caption="Wavtek">
+                <img class="materialboxed logo" src="asset/logo/logo-snsr.jpg" data-caption="Sensormatic">
+                <img class="materialboxed logo" src="asset/logo/logo-qktn.gif" data-caption="Quickturn Design System">
+                <img class="materialboxed logo" src="asset/logo/logo-ciph.jpg" data-caption="Ciphergen">
+                <img class="materialboxed logo" src="asset/logo/logo-abi.jpg"  data-caption="PE Biosystem">
+                <img class="materialboxed logo" src="asset/logo/logo-spirent.png" data-caption="Spirent">
+                <img class="materialboxed logo" src="asset/logo/logo-terayon.png"  data-caption="Terayon">
+                <img class="materialboxed logo" src="asset/logo/logo-mot.png"  data-caption="Motorola Mobility">
+                <img class="materialboxed logo" src="asset/logo/logo-arrs.png" data-caption="Arris">
+                <img class="materialboxed logo" src="asset/logo/logo-d2k.gif"  data-caption="D2K">
+                <img class="materialboxed logo" src="asset/logo/logo-bridgespan.png" data-caption="Bridgespan">
+                <img class="materialboxed logo" src="asset/logo/logo-bendix.jpg" data-caption="Bendix">
+            </div>
+        </div>
+
+        <div class="col s12 m6" style="border-left: 1px solid lightgrey;">
+            <h5 style="text-align: center;">Technology</h5>
+            <div class="div-thumb valign-wrapper">
+                <img class="materialboxed logo" src="asset/logo/tm-java.png" data-caption="Java" style="width: 180px;">
+                <img class="materialboxed logo" src="asset/logo/tm-swing.jpg" data-caption="Java Swing">
+                <img class="materialboxed logo" src="asset/logo/tm-css.png" data-caption="CSS3">
+                <img class="materialboxed logo" src="asset/logo/tm-html.png" data-caption="HTML5">
+                <img class="materialboxed logo" src="asset/logo/tm-js.png"  data-caption="JavaScript" style="width: 60px;">
+                <img class="materialboxed logo" src="asset/logo/tm-jq.gif"  data-caption="jQuery">
+                <img class="materialboxed logo" src="asset/logo/tm-angular.png" data-caption="Angular JS">
+                <img class="materialboxed logo" src="asset/logo/tm-bootstrap.jpg" data-caption="Bootstrap">
+                <img class="materialboxed logo" src="asset/logo/tm-am.jpg" data-caption="Angular Material">
+                <img class="materialboxed logo" src="asset/logo/tm-materialize.jpg" data-caption="Materialize CSS">
+                <img class="materialboxed logo" src="asset/logo/logo-nodejs.jpg" data-caption="Node JS">
+                <img class="materialboxed logo" src="asset/logo/logo-mongodb.png" data-caption="MongoDB">
+                <img class="materialboxed logo" src="asset/logo/logo-xpress.png" data-caption="Exress JS">
+                <img class="materialboxed logo" src="asset/logo/tm-restful.jpeg" data-caption="RESTful">
+                <img class="materialboxed logo" src="asset/logo/tm-jsp.png" data-caption="Java Server Pages">
+                <img class="materialboxed logo" src="asset/logo/tm-servlet.png" data-caption="Java Servlet">
+                <img class="materialboxed logo" src="asset/logo/tm-cpp.jpg" data-caption="C++" style="width: 80px;">
+                <!--<img class="materialboxed logo" src="asset/logo/tm-android.ico" data-caption="Android">-->
+            </div>
+        </div>
+    </div>
+
+    <!------------ parallex for UI samples ------------>
+    <div class="parallax-container valign-wrapper" id="UI-SAMPLE">
+        <div class="parallax"><img src="asset/background/bkgnd-3.png" ></div>
+        <div class="row center">
+            <h3 class="col s12 white-text light">User Interface Samples</h3>
+        </div>
+    </div>
+    <!-- use flex to layout images, NOTE: materialboxed provides lightbox interface -->
+    <div class="div-thumb red lighten-5 valign-wrapper">
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/twitch.png" data-caption="Twitch">
+            <div style="text-align: center;">
+                <!--<a href="#BADGE-MODAL" style="margin-right: 35px">more...</a>-->
+                <a href="https://twitch-tv.herokuapp.com" target="_blank">twitch TV</a>
+            </div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/weather.png" data-caption="Ryu">
+            <div style="text-align: center;">
+                <!--<a href="#BADGE-MODAL" style="margin-right: 35px">more...</a>-->
+                <a href="https://my-weather-card.herokuapp.com" target="_blank">Weather Card</a>
+            </div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/wiki.png" data-caption="Wiki">
+            <div style="text-align: center;">
+                <!--<a href="#BADGE-MODAL" style="margin-right: 35px">more...</a>-->
+                <a href="https://stark-dawn-41201.herokuapp.com" target="_blank">Wiki</a>
+            </div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/spring-travel.jpg" data-caption="2017 Spring China Tour">
+            <div style="text-align: center;">
+                <!--<a href="#BADGE-MODAL" style="margin-right: 35px">more</a>-->
+                <a href="https://spring-travel.herokuapp.com" target="_blank">Travel China</a>
+            </div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/mt-shasta-01.jpg" data-caption="Mt. Shasta Tour">
+            <div style="text-align: center;">
+                <a href="https://mt-shasta.herokuapp.com" target="_blank">Mt. Shasta Tour</a>
+                <a href="#SHASTA-MODAL" style="margin-left: 30px;">more</a>
+            </div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/badge-01.png" data-caption="CLDAA Badge System">
+            <div style="text-align: center;">
+                <a href="https://member-badge.herokuapp.com" target="_blank">Badge system</a>
+                <a href="#BADGE-MODAL" style="margin-left: 30px;">more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- holding samples w/o live pages -->
+    <div class="div-thumb blue-grey lighten-5">
+        <img class="materialboxed" src="asset/ui-sample/dance-01.png" data-caption="Dance Collection">
+        <img class="materialboxed" src="asset/ui-sample/rhea-01.png"  data-caption="Rhea 2">
+        <img class="materialboxed" src="asset/ui-sample/rhea-02.png"  data-caption="Rhea 3">
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/dash-01.png" data-caption="My Dashboard">
+            <div class="center-align"><a href="#DASH-MODAL" class="center-align">more</a></div>
+        </div>
+
+        <img class="materialboxed" src="asset/ui-sample/cartoon.png" data-caption="Ryu">
+        <img class="materialboxed" src="asset/ui-sample/starwar.png" data-caption="Starwar">
+        <img class="materialboxed" src="asset/ui-sample/so-01.jpg" data-caption="Stack Overflow">
+        <img class="materialboxed" src="asset/ui-sample/ttt.png" data-caption="Tic Tac Toe">
+
+        <img class="materialboxed" src="asset/ui-sample/ciph-01.jpg" data-caption="Protein Chip Analyzer">
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/CAP-1000-UI.png" data-caption="CAP-1000">
+            <div class="center-align"><a href="#CAP-MODAL" class="waves-effect waves-light">more1</a></div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/me-7000-UI.png" data-caption="ME-7000">
+            <div class="center-align"><a href="#ME-MODAL" class="center-align">more</a></div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/abi-01.jpg" data-caption="DNA Sequencer">
+            <div class="center-align"><a href="#ABI-MODAL" class="center-align">more</a></div>
+        </div>
+        <div>
+            <img class="materialboxed" src="asset/ui-sample/greenlight-01.jpg" data-caption="Greenlight.com">
+            <div class="center-align"><a href="#GL-MODAL" class="center-align">more</a></div>
+        </div>
+    </div>
+
+    <!------------ image strip with products links to other pages ------------>
+    <div class="parallax-container valign-wrapper" id="PRODUCTS">
+        <div class="parallax"><img src="asset/background/bkgnd-4.png"
+           alt="Unsplashed background img 3">
+        </div>
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h3 class="header col s12 white-text light">Product Portfolio</h3>
+            </div>
+        </div>
+    </div>
+
+    <!------------ products I was involved with ------------>
+    <div class="div-thumb valign-wrapper">
+        <img class="materialboxed" src="asset/product/wvtk-11.jpg" data-caption="Wavetek 1882 Analyzer">
+        <img class="materialboxed" src="asset/product/samII.jpg"  data-caption="Wavetek SAM II">
+        <img class="materialboxed" src="asset/product/wvtk-10.jpg" data-caption="Wavetek SAM 1000">
+        <img class="materialboxed" src="asset/product/wvtk1.jpg" data-caption="Wavetek 2500">
+        <img class="materialboxed" src="asset/product/snsr3.jpg" data-caption="Sensormatic tags">
+        <img class="materialboxed" src="asset/product/snsr2.jpg" data-caption="Sensormatic pedastal">
+        <img class="materialboxed" src="asset/product/snsr1.jpg" data-caption="Sensormatic pedastal">
+        <img class="materialboxed" src="asset/product/snsr-07.jpg" data-caption="Sensormatic Access Control">
+        <img class="materialboxed" src="asset/product/snsr-06.jpg" data-caption="Sensorvision">
+        <img class="materialboxed" src="asset/product/snsr4.jpg" data-caption="Sensorvision controller">
+        <img class="materialboxed" src="asset/product/snsr5.jpg" data-caption="Sensorvision dome">
+        <img class="materialboxed" src="asset/product/ABI2.jpg" data-caption="PE Biosystem 3100">
+        <img class="materialboxed" src="asset/product/ABI3.jpg" data-caption="PE Biosystem 3100">
+        <img class="materialboxed" src="asset/product/ABI4.JPG" data-caption="PE Biosystem 3700">
+        <img class="materialboxed" src="asset/product/ABI6.png" data-caption="PE Biosystem 3700">
+        <img class="materialboxed" src="asset/product/ciphergen2.jpg" data-caption="Ciphergen PCS4000">
+        <img class="materialboxed" src="asset/product/cherry-picker1.jpg" data-caption="Terayon DM-6400">
+        <img class="materialboxed" src="asset/product/cherry-picker2.png" data-caption="Motorola CAP-1000">
+        <img class="materialboxed" src="asset/product/me-7000.png" data-caption="Arris ME-7000">
+    </div>
+
+    <!------------ footer with links to more information ------------>
+    <footer class="page-footer teal">
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col l6 s12">-->
+                    <!--<h5 class="white-text">Company Bio</h5>-->
+                    <!--<p class="grey-text text-lighten-4">.</p>-->
+                <!--</div>-->
+                <!--<div class="col l3 s12">-->
+                    <!--<h5 class="white-text">Settings</h5>-->
+                    <!--<ul>-->
+                        <!--<li><a class="white-text" href="#top">Top of Page</a></li>-->
+                        <!--<li><a class="white-text" href="#!">Link 2</a></li>-->
+                        <!--<li><a class="white-text" href="#!">Link 3</a></li>-->
+                        <!--<li><a class="white-text" href="#!">Link 4</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="col l3 s12">-->
+                    <!--<h5 class="white-text">Connect</h5>-->
+                    <!--<ul>-->
+                        <!--<li><a class="white-text" href="#!">Link 1</a></li>-->
+                        <!--<li><a class="white-text" href="#!">Link 2</a></li>-->
+                        <!--<li><a class="white-text" href="#!">Link 3</a></li>-->
+                        <!--<li><a class="white-text" href="#!">Link 4</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+    <!------------ modal dialog with carousel for each UI sample with multiple images --------------------->
+    <div id="CAP-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/cap-01.png"></li>
+                    <li><img src="asset/ui-sample/cap-02.png"></li>
+                    <li><img src="asset/ui-sample/cap-03.png"></li>
+                    <li><img src="asset/ui-sample/cap-04.png"></li>
+                    <li><img src="asset/ui-sample/cap-05.png"></li>
+                    <li><img src="asset/ui-sample/cap-06.png"></li>
+                    <li><img src="asset/ui-sample/cap-07.png"></li>
+                    <li><img src="asset/ui-sample/cap-08.png"></li>
+                    <li><img src="asset/ui-sample/cap-09.png"></li>
+                    <li><img src="asset/ui-sample/cap-10.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="ME-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/me-01.png"></li>
+                    <li><img src="asset/ui-sample/me-02.png"></li>
+                    <li><img src="asset/ui-sample/me-03.png"></li>
+                    <li><img src="asset/ui-sample/me-04.png"></li>
+                    <li><img src="asset/ui-sample/me-05.png"></li>
+                    <li><img src="asset/ui-sample/me-06.png"></li>
+                    <li><img src="asset/ui-sample/me-07.png"></li>
+                    <li><img src="asset/ui-sample/me-08.png"></li>
+                    <li><img src="asset/ui-sample/me-09.png"></li>
+                    <li><img src="asset/ui-sample/me-10.png"></li>
+                    <li><img src="asset/ui-sample/me-11.png"></li>
+                    <li><img src="asset/ui-sample/me-12.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="GL-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/greenlight-01.jpg"></li>
+                    <li><img src="asset/ui-sample/greenlight-05.jpg"></li>
+                    <li><img src="asset/ui-sample/greenlight-02.jpg"></li>
+                    <li><img src="asset/ui-sample/greenlight-03.jpg"></li>
+                    <li><img src="asset/ui-sample/greenlight-04.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="ABI-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/abi-01.jpg"></li>
+                    <li><img src="asset/ui-sample/abi-02.jpg"></li>
+                    <li><img src="asset/ui-sample/abi-03.jpg"></li>
+                    <li><img src="asset/ui-sample/abi-04.jpg"></li>
+                    <li><img src="asset/ui-sample/abi-05.jpg"></li>
+                    <li><img src="asset/ui-sample/abi-06.jpg"></li>
+                    <li><img src="asset/ui-sample/abi-07.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="DASH-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/dash-01.png"></li>
+                    <li><img src="asset/ui-sample/dash-02.png"></li>
+                    <li><img src="asset/ui-sample/dash-03.png"></li>
+                    <li><img src="asset/ui-sample/dash-04.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="BADGE-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/badge-01.png"></li>
+                    <li><img src="asset/ui-sample/badge-02.png"></li>
+                    <li><img src="asset/ui-sample/badge-03.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="SHASTA-MODAL" class="modal">
+        <div class="modal-content">
+            <div class="slider">
+                <ul class="slides">
+                    <li><img src="asset/ui-sample/mt-shasta-01.jpg"></li>
+                    <li><img src="asset/ui-sample/mt-shasta-02.jpg"></li>
+                    <li><img src="asset/ui-sample/mt-shasta-03.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="lib/materialize.js"></script>
+<script>
+$(document).ready(function () {
+    $('.slider').slider();
+    $('.parallax').parallax();
+    $('#CAP-MODAL').modal(); $('#ME-MODAL').modal(); $('#GL-MODAL').modal(); $('#ABI-MODAL').modal();
+    $('#DASH-MODAL').modal(); $('#BADGE-MODAL').modal(); $('#SHASTA-MODAL').modal();
+    $('.carousel').carousel();
+    $('.button-collapse').sideNav();
+});
+</script>
+</html>

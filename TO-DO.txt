@@ -1,0 +1,7 @@
+Future ideas for this project:
+
+1. Add icons in the Summary section to connect people via Facebook, Linkedin and Twitter
+
+2. Add another menu item to open HTML version of my current resume.  Resume needs to have live content such as animating icons, animation, link text within and to live pages, even with videos.
+
+3. Use media query to make view works better on smart phones - portrait 1 column to 2columns
