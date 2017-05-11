@@ -6,4 +6,4 @@ and some UI samples.
   ![Screenshot](sample-2.png)
   ![Screenshot](sample-3.png)
 
- Here is the live link https://career-portfolio.heroku.com
+ Here is the live link https://career-portfolio.herokuapp.com
